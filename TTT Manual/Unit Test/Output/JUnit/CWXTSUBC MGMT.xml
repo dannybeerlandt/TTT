@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?totaltestVersion 18.2.2.v20170815-1214_30?>
+<!--Topaz for Total Test 18.2.2.v20170815-1214_30 5-sep-2017 12:31:56-->
+<testsuites>
+  <testsuite errors="0" failures="1" name="Project: 'TTT Manual' Scenario: 'CWXTSUBC MGMT' Testcase: 'CWXTSUBC TestCase Mgmt 1'" tests="1">
+    <testcase classname="Project: 'TTT Manual' Scenario: 'CWXTSUBC MGMT' Testcase: 'CWXTSUBC TestCase Mgmt 1'" name="Check for COMM_TOTAL">
+      <failure>Check for COMM_TOTAL failed
+
+Actual Value:    		
+
+Expected Value:  3750</failure>
+    </testcase>
+  </testsuite>
+</testsuites>
