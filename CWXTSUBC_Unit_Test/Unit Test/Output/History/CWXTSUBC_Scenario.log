@@ -1,0 +1,93 @@
+
+***************** Output from TTTRUNNR *****************
+
+ STTR043I Initializing simulation environment for: COBOL V4
+ STTR043I Initializing simulation environment for: COBOL V5
+ STTR011I totaltest zTargetRunner v170200 on 2018-10-17 14:33.22��������������������������������������
+ STTR012I Options set to EXIT(),STUBS(OFF),REPEAT(0),ARGTYPE(��������)
+ STTR013I Processing test suite CWXTSUBC
+ STTR014I Processing test scenario CWXTSUBC
+ STTR028I Processing test case CWXTSUBC
+ STTR006I Executing target CWXTSUBC
+ STTR028I Processing test case ��������
+ STTR006I Executing target CWXTSUBC
+ STTR008I All targets successfully executed
+
+***************** Output from TTOUT *****************
+
+ ---BNDTARGT---entry
+ --->>>modName = CWXTSUBC, epName = CWXTSUBC
+ ---openW_includeName---entry
+ --->>>moduleName = CWXTSUBC
+  openW: rc = 0, rs = <0X00000000>.
+  includeName: rc = 0, rs = <0X00000000>.
+ ---openW_includeName---exit
+  getE: rc, count = 3, rs = <0X83000800>.
+ ---closeW---entry
+  closeW: rc = 0, rs = <0X00000000>
+ ---closeW---exit
+ ---BNDTARGT---exit
+ ---BNDTARGT---entry
+ --->>>modName = CWXTSUBC, epName = CWXTSUBC
+ ---openW_includeName---entry
+ --->>>moduleName = CWXTSUBC
+  openW: rc = 0, rs = <0X00000000>.
+  includeName: rc = 0, rs = <0X00000000>.
+ ---openW_includeName---exit
+  getE: rc, count = 3, rs = <0X83000800>.
+ ---closeW---entry
+  closeW: rc = 0, rs = <0X00000000>
+ ---closeW---exit
+ ---BNDTARGT---exit
+ ---IDRDDIO---entry
+ --->>>modName = CWXTSUBC, csectName = CWXTSUBC
+ ---openW_includeName---entry
+ --->>>moduleName = CWXTSUBC
+  openW: rc = 0, rs = <0X00000000>.
+  includeName: rc = 0, rs = <0X00000000>.
+ ---openW_includeName---exit
+  IDRU: Creation Date = 2018065, Length = 40
+   data = c3e7c3e6e7e3e2e4c2c307821ff810b819d55dd37760000000000000000000000000000000000000
+   program = CWXTSUBC, ddio(16) = HBEDXB0.DEMO.SSD
+ ---closeW---entry
+  closeW: rc = 0, rs = <0X00000000>
+ ---closeW---exit
+ ---IDRDDIO---exit
+ ---BNDTARGT---entry
+ --->>>modName = CWXTSUBC, epName = CWXTSUBC
+ ---openW_includeName---entry
+ --->>>moduleName = CWXTSUBC
+  openW: rc = 0, rs = <0X00000000>.
+  includeName: rc = 0, rs = <0X00000000>.
+ ---openW_includeName---exit
+  getE: rc, count = 3, rs = <0X83000800>.
+ ---closeW---entry
+  closeW: rc = 0, rs = <0X00000000>
+ ---closeW---exit
+ ---BNDTARGT---exit
+ ---BNDTARGT---entry
+ --->>>modName = CWXTSUBC, epName = CWXTSUBC
+ ---openW_includeName---entry
+ --->>>moduleName = CWXTSUBC
+  openW: rc = 0, rs = <0X00000000>.
+  includeName: rc = 0, rs = <0X00000000>.
+ ---openW_includeName---exit
+  getE: rc, count = 3, rs = <0X83000800>.
+ ---closeW---entry
+  closeW: rc = 0, rs = <0X00000000>
+ ---closeW---exit
+ ---BNDTARGT---exit
+ ---IDRDDIO---entry
+ --->>>modName = CWXTSUBC, csectName = CWXTSUBC
+ ---openW_includeName---entry
+ --->>>moduleName = CWXTSUBC
+  openW: rc = 0, rs = <0X00000000>.
+  includeName: rc = 0, rs = <0X00000000>.
+ ---openW_includeName---exit
+  IDRU: Creation Date = 2018065, Length = 40
+   data = c3e7c3e6e7e3e2e4c2c307821ff810b819d55dd37760000000000000000000000000000000000000
+   program = CWXTSUBC, ddio(16) = HBEDXB0.DEMO.SSD
+ ---closeW---entry
+  closeW: rc = 0, rs = <0X00000000>
+ ---closeW---exit
+ ---IDRDDIO---exit

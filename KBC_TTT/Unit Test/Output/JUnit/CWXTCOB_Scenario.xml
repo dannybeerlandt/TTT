@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?totaltestVersion 19.2.1.v20180920-0235_707?>
+<!--Topaz for Total Test 19.2.1.v20180920-0235_707 Oct 18, 2018 1:34:52 PM-->
+<testsuites>
+  <testsuite errors="0" failures="0" name="KBC_TTT.CWXTCOB_Scenario.00001: CWXTCOBCase1" tests="2">
+    <testcase classname="KBC_TTT.CWXTCOB_Scenario.00001: CWXTCOBCase1" name="00001: Check for PARM_LTH"/>
+    <testcase classname="KBC_TTT.CWXTCOB_Scenario.00001: CWXTCOBCase1" name="00002: Check for PARM_DATA"/>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?totaltestVersion 19.2.1.v20180920-0235_707?>
+<!--Topaz for Total Test 19.2.1.v20180920-0235_707 Oct 18, 2018 1:34:52 PM-->
+<testExecutions version="1">
+  <file path="C:\Users\cwbe-DBeerlandt\Compuware\Topaz19\workspace\KBC_TTT\Unit Test\Scenarios\CWXTCOB_Scenario.testscenario">
+    <testCase duration="0" name="KBC_TTT.CWXTCOB_Scenario.00001: CWXTCOBCase1.00001: Check for PARM_LTH"/>
+    <testCase duration="0" name="KBC_TTT.CWXTCOB_Scenario.00001: CWXTCOBCase1.00002: Check for PARM_DATA"/>
+  </file>
+</testExecutions>
