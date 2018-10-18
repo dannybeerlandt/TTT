@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?totaltestVersion 18.2.2.v20170815-1214_30?>
-<!--Topaz for Total Test 18.2.2.v20170815-1214_30 5-sep-2017 12:31:56-->
-<testsuites>
-  <testsuite errors="0" failures="0" name="Project: 'TTT Manual' Scenario: 'cwxtsubc test' Testcase: 'CWXTSUBC Mgmt'" tests="1">
-    <testcase classname="Project: 'TTT Manual' Scenario: 'cwxtsubc test' Testcase: 'CWXTSUBC Mgmt'" name="Check for COMM_TOTAL"/>
-  </testsuite>
-</testsuites>
