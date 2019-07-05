@@ -1,0 +1,26 @@
+14:24:57.131 COMMENT   Engine           Test Scenario execution started
+14:24:57.132 INFO      Engine           Using context settings:
+  Engine Version       : 19.4.1
+  Environment id                : 5b5f2a71787be73b59238d7b
+  Environment type              : Cics
+  Operating system              : ZOS
+  zOS agent version             : NEWEST
+  Server address                : CWCC.COMPUWARE.COM
+  Server port                   : 16196
+  Job execution timeout seconds : 600
+  Job info interval seconds     : 3
+  Socket read timeout           : 30
+  Encoding                      : ISO8859-1
+  Codepage                      : IBM-1047
+  Host user Id                  : hbedxb0
+14:24:57.132 INFO      Engine           Setting variables from context and context data extensions
+14:24:57.132 INFO      Engine             id: environmentId      value: 5b5f2a71787be73b59238d7b
+14:24:57.132 INFO      Engine             id: environmentType    value: CICS
+14:24:57.132 INFO      Engine             id: userId             value: hbedxb0
+14:24:57.133 INFO      SQLSelect        Interpreting SQLSelect id:SELECT statement: SELECT CUSTOMERNUMBER, FIRSTNAME, LASTNAME FROM GENAPPDB.CUSTOMER
+14:24:57.133 INFO      SQLSelect        Using database from Environment:DBCCCWCC
+14:24:57.135 LOG       SQLSelect        Establishing connection to database DBCCCWCC
+14:24:57.147 ERROR     SQLSelect        Unable to get a database connection. com.ibm.db2.jcc.DB2Driver
+14:24:57.147 ERROR     Engine           Unable to get a database connection. com.ibm.db2.jcc.DB2Driver
+14:24:57.147 ERROR     Engine           An error occurred. Now stopping the execution.
+14:24:57.147 COMMENT   Engine           Test Scenario execution ended

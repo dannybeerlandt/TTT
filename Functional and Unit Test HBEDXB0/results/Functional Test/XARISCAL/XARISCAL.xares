@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XaUnitResult resultType="FAILURE" containsSimulation="false">
+  <ExecutionId>8b450e37-e1b2-402d-9725-5e63ab8d1749</ExecutionId>
+  <Message>An error occurred and the execution has been stopped. Unable to submit the TTTRunner job for the component 'CWXTCOB'. Reason: Server responded with an error. Message: XAT1018E NOOP: Unsupported operation: TTTRUNNR on runtime: ReturnCode:1018</Message>
+  <AST>
+    <XaUnit xmlns="http://www.xact.dk/xatester/v/1" xmlns:data="http://www.xact.dk/xatester/data/v/1">
+      <Test>
+        <Component id="xariscal" label="XARISCAL" moduleName="XARISCAL" programExitVerify="value &lt; 8" programExit="0" rollback="false">
+          <Data>
+            <import>
+              <customer>
+                <age>2</age>
+              </customer>
+            </import>
+            <export>
+              <risc expected="4">4</risc>
+            </export>
+          </Data>
+        </Component>
+      </Test>
+      <MetaData>
+        <Component name="XARISCAL" type="COBOL">
+          <INOUT>
+            <import>
+              <customer>
+                <age type="NumericDisplay" length="3" bytes="3" inOutType="INPUT" signed="false" decimals="0" />
+              </customer>
+            </import>
+            <export>
+              <risc type="NumericDisplay" length="3" bytes="3" inOutType="OUTPUT" signed="false" decimals="0" />
+            </export>
+          </INOUT>
+        </Component>
+        <Component name="CWXTCOB" type="COBOL">
+          <INOUT />
+        </Component>
+      </MetaData>
+    </XaUnit>
+  </AST>
+  <Context>
+    <ExecutionContext xmlns="http://www.xact.dk/xatester/v/1" environment="5b508b8a787be73b59238d38" logLevel="LOG" remote="false" useSimulations="true" uploadResult="false" timeout="600" readTimeout="30" debuggerType="NONE" jobInfoInterval="3" userid="hbedxb0">
+      <platformruntime callinterface="NONE" database="DBCCCWCC" driver="com.ibm.db2.jcc.DB2Driver" uri="jdbc:db2://cwcc.compuware.com:546/${database}" environmenttype="BATCH" />
+      <ExtensionData />
+      <ExtensionData componentName="xariscal" componentId="5b59c9b5787be73b59238d53">
+        <Parameter key="sourcelibrary">
+          <Value>SYS2.CW.XATESTER.SXATSAMP</Value>
+        </Parameter>
+        <Parameter key="loadlibraries">
+          <Value>WPAAWJ.TTT.LOAD</Value>
+        </Parameter>
+        <Parameter key="loadlibrary">
+          <Value>SYS2.CW.XATESTER.SXATLOAD</Value>
+        </Parameter>
+        <Parameter key="sourcelibraries">
+          <Value>WPAAWJ.TTT.CNTL</Value>
+        </Parameter>
+        <Parameter key="callinterface">
+          <Value>NONE</Value>
+        </Parameter>
+      </ExtensionData>
+      <ExtensionData componentName="cwxtcob" componentId="5ba0fe7a787be73b59238fc0">
+        <Parameter key="sourcelibrary">
+          <Value>SYS2.CW.XTR17X.SLXTSAMP</Value>
+        </Parameter>
+        <Parameter key="loadlibrary">
+          <Value>SNCBAW0.ESS.LOAD</Value>
+        </Parameter>
+        <Parameter key="sourcelibraries">
+          <Value>SNCBAW0.TSO.SOURCE</Value>
+        </Parameter>
+        <Parameter key="callinterface">
+          <Value>NONE</Value>
+        </Parameter>
+      </ExtensionData>
+      <References componentName="xariscal" />
+      <References componentName="cwxtcob">
+        <Reference>//EMPFILE  DD  DISP=SHR,DSN=SYS2.CW.&amp;CWGAXT..SLXTSAMP(CWXTDATA)
+//RPTFILE  DD   DISP=(NEW,CATLG),DSN=SNCBAW0.REPORT.FILE,
+//         UNIT=SYSDA,SPACE=(TRK,(1,1))
+//SYSOUT   DD  SYSOUT=*</Reference>
+      </References>
+      <XaUnit xmlns:data="http://www.xact.dk/xatester/data/v/1" componentNameUnderTest="xariscal" path="XARISCAL.xaunit">
+        <Test>
+          <Component id="xariscal" label="XARISCAL" moduleName="XARISCAL" programExitVerify="value &lt; 8" rollback="false">
+            <Data>
+              <import>
+                <customer>
+                  <age>2</age>
+                </customer>
+              </import>
+              <export>
+                <risc expected="4" />
+              </export>
+            </Data>
+          </Component>
+          <Unittest testscenariopath="Unit Test/Scenarios/CWXTCOB_Scenario.testscenario" moduleName="CWXTCOB" />
+        </Test>
+        <MetaData>
+          <Component name="XARISCAL" type="COBOL">
+            <INOUT>
+              <import>
+                <customer>
+                  <age type="NumericDisplay" length="3" bytes="3" inOutType="INPUT" signed="false" decimals="0" />
+                </customer>
+              </import>
+              <export>
+                <risc type="NumericDisplay" length="3" bytes="3" inOutType="OUTPUT" signed="false" decimals="0" />
+              </export>
+            </INOUT>
+          </Component>
+          <Component name="CWXTCOB" type="COBOL">
+            <INOUT />
+          </Component>
+        </MetaData>
+      </XaUnit>
+      <ExternalResources />
+    </ExecutionContext>
+  </Context>
+  <Started>20190705-15-25-35</Started>
+  <Ended>20190705-15-25-47</Ended>
+</XaUnitResult>

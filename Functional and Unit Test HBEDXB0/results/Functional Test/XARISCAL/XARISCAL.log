@@ -1,0 +1,68 @@
+15:25:35.419 COMMENT   Engine           Test Scenario execution started
+15:25:35.420 INFO      Engine           Using context settings:
+  Engine Version       : 19.4.1
+  Environment id                : 5b508b8a787be73b59238d38
+  Environment type              : Batch
+  Operating system              : ZOS
+  zOS agent version             : NEWEST
+  Server address                : CWCC.COMPUWARE.COM
+  Server port                   : 16196
+  Job execution timeout seconds : 600
+  Job info interval seconds     : 3
+  Socket read timeout           : 30
+  Encoding                      : ISO8859-1
+  Codepage                      : IBM-1047
+  Host user Id                  : hbedxb0
+15:25:35.420 INFO      Engine           Setting variables from context and context data extensions
+15:25:35.420 INFO      Engine             id: environmentId      value: 5b508b8a787be73b59238d38
+15:25:35.420 INFO      Engine             id: environmentType    value: BATCH
+15:25:35.420 INFO      Engine             id: userId             value: hbedxb0
+15:25:35.421 INFO      Component        Interpreting Component: XARISCAL program:XARISCAL
+15:25:35.453 LOG       CWCC Batch       Component Runtime Settings:
+15:25:35.453 LOG       CWCC Batch         Load library              :SYS2.CW.XATESTER.SXATLOAD
+15:25:35.453 LOG       CWCC Batch         Additional load libraries :WPAAWJ.TTT.LOAD
+15:25:35.453 LOG       CWCC Batch         Listing libraries         :
+15:25:35.453 LOG       CWCC Batch         SysDebug libraries        :
+15:25:35.453 LOG       CWCC Batch         DB2 Subsystem ID          :
+15:25:35.453 LOG       CWCC Batch         DB2 plan                  :
+15:25:35.453 LOG       CWCC Batch         Call interface            :NONE
+15:25:35.453 LOG       CWCC Batch         Debugger type             :NONE
+15:25:35.453 LOG       CWCC Batch         Component type            :COBOL
+15:25:35.462 INFO      CWCC Batch       Sending Module execution request to Host for module:XARISCAL rollback:false
+15:25:35.641 INFO      HCIClient        Creating job directory /u/xatester/hbedxb0/386ce13a712b48b287a17922d3de06f2
+15:25:35.933 LOG       CWCC Batch       Uploading input data for module XARISCAL
+15:25:37.000 LOG       HCIClient        Request to host: <?xml version="1.0" encoding="UTF-8"?><XATZREQ><xatz_request><userid>HBEDXB0</userid><xpassword>XXX</xpassword><operation>EXECUTE</operation><runat>DAY</runat><loglevel>log</loglevel><inputfilepath>XAT_Module.i.xml</inputfilepath><outputfilepath>XAT_Module.o.xml</outputfilepath><runtime>BATCH</runtime><callinterface /><applid /><db2plan /><db2id /><rollback>false</rollback><jobdirectory>386ce13a712b48b287a17922d3de06f2</jobdirectory><amode24>false</amode24><members><membername>XARISCAL</membername></members><loads><mainload>SYS2.CW.XATESTER.SXATLOAD</mainload><load>WPAAWJ.TTT.LOAD</load></loads><codepage>1047</codepage><lang>COBOL</lang></xatz_request></XATZREQ>
+15:25:37.260 LOG       HCIClient        Response from host: <?xml version="1.0" encoding="UTF-8"?><XATZRESP xmlns:xsi="http://www.w3.ORG/2001/XMLSCHEMA-INSTANCE"><xatz_response><resultcode>0</resultcode><resultmessage></resultmessage><jobid>J0762372</jobid><jobname>HBEDXB0E</jobname><starttime>20190705092537188</starttime></xatz_response></XATZRESP>
+15:25:37.263 LOG       HCIClient        Response received from Host. Message: JobId:J0762372
+15:25:37.263 INFO      HCIClient        Job has been started at host with JobId:J0762372
+15:25:37.264 INFO      CWCC Batch       Waiting for Execution Result from Host
+15:25:40.634 INFO      CWCC Batch       Component completed with program exit: +0
+15:25:40.792 LOG       CWCC Batch       Setting execution variable 'jobid' to J0762372
+15:25:40.792 LOG       CWCC Batch       Setting execution variable 'programexit' to 0
+15:25:40.946 INFO      Component        Verifying program exit code: 0 against verify expression: value < 8
+15:25:41.309 INFO      Component        Program exit code was verified to be accepted by the expression: value < 8
+15:25:41.309 INFO      Component        Finished interpreting Component: XARISCAL program:XARISCAL
+15:25:41.311 INFO      Unittest         Interpreting Unittest of module: CWXTCOB testscenario path: Unit Test/Scenarios/CWXTCOB_Scenario.testscenario
+15:25:47.045 LOG       HCIClient        Request to host: <?xml version="1.0" encoding="UTF-8"?><XATZREQ><xatz_request><userid>HBEDXB0</userid><xpassword>XXX</xpassword><operation>TTTRUNNR</operation><runat>DAY</runat><members><membername>CWXTCOB</membername></members><loads><mainload>SNCBAW0.ESS.LOAD</mainload></loads><refs><ref>//EMPFILE  DD  DISP=SHR,DSN=SYS2.CW.&amp;CWGAXT..SLXTSAMP(CWXTDATA)</ref><ref>//RPTFILE  DD   DISP=(NEW,CATLG),DSN=SNCBAW0.REPORT.FILE,</ref><ref>//         UNIT=SYSDA,SPACE=(TRK,(1,1))</ref><ref>//SYSOUT   DD  SYSOUT=*</ref></refs><bininp>HBEDXB0.TOTALTST.ID000003.BININP</bininp><binref>HBEDXB0.TOTALTST.ID000003.BINREF</binref><binres>HBEDXB0.TOTALTST.ID000003.BINRES</binres><tttrepeat>0</tttrepeat><tttstubs>ON</tttstubs><tttdebug>OFF</tttdebug></xatz_request></XATZREQ>
+15:25:47.209 LOG       HCIClient        Response from host: <?xml version="1.0" encoding="UTF-8"?><XATZRESP xmlns:xsi="http://www.w3.ORG/2001/XMLSCHEMA-INSTANCE"><xatz_response><resultcode>1018</resultcode><resultmessage>XAT1018E NOOP: Unsupported operation: TTTRUNNR on runtime:</resultmessage></xatz_response></XATZRESP>
+15:25:47.211 LOG       HCIClient        Response received from Host. Message:XAT1018E NOOP: Unsupported operation: TTTRUNNR on runtime: JobId:
+15:25:47.212 ERROR     Unittest         Error occurred while executing request. Server responded with an error. Message: XAT1018E NOOP: Unsupported operation: TTTRUNNR on runtime: ReturnCode:1018
+15:25:47.213 ERROR     Unittest         com.compuware.xatester.xaunit.exceptions.ServerResponseException: Server responded with an error. Message: XAT1018E NOOP: Unsupported operation: TTTRUNNR on runtime: ReturnCode:1018
+	at com.compuware.xatester.xaunit.platforms.strategies.HCIClient.executeAsync(HCIClient.java:410)
+	at com.compuware.xatester.xaunit.platforms.strategies.HCIHostCommunicator.executeAsync(HCIHostCommunicator.java:180)
+	at com.compuware.xatester.xaunit.platforms.strategies.TTTRunStrategy.execute(TTTRunStrategy.java:92)
+	at com.compuware.xatester.xaunit.platforms.HostProcess.execute(HostProcess.java:249)
+	at com.compuware.xatester.unittest.extensions.UnittestComponent.runTestSuite(UnittestComponent.java:309)
+	at com.compuware.xatester.unittest.extensions.UnittestComponent.interprete(UnittestComponent.java:253)
+	at com.compuware.xatester.unittest.extensions.UnittestComponent.interprete(UnittestComponent.java:1)
+	at com.compuware.xatester.xaunit.execution.XaUnitInterpreter.interpretChildComponents(XaUnitInterpreter.java:89)
+	at com.compuware.xatester.xaunit.execution.XaUnitInterpreter.interpret(XaUnitInterpreter.java:213)
+	at com.compuware.xatester.ui.execution.XaUnitExecutor.execute(XaUnitExecutor.java:186)
+	at com.compuware.xatester.ui.execution.XaUnitExecutor.access$0(XaUnitExecutor.java:182)
+	at com.compuware.xatester.ui.execution.XaUnitExecutor$XaUnitExecutorJob.run(XaUnitExecutor.java:294)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+15:25:47.213 ERROR     Unittest         Unable to submit the TTTRunner job for the component 'CWXTCOB'. Reason: Server responded with an error. Message: XAT1018E NOOP: Unsupported operation: TTTRUNNR on runtime: ReturnCode:1018com.compuware.xatester.xaunit.exceptions.ServerResponseException: Server responded with an error. Message: XAT1018E NOOP: Unsupported operation: TTTRUNNR on runtime: ReturnCode:1018
+15:25:47.230 ERROR     Engine           Unable to submit the TTTRunner job for the component 'CWXTCOB'. Reason: Server responded with an error. Message: XAT1018E NOOP: Unsupported operation: TTTRUNNR on runtime: ReturnCode:1018
+15:25:47.230 ERROR     Engine           An error occurred. Now stopping the execution.
+15:25:47.230 COMMENT   Engine           Test Scenario execution ended
